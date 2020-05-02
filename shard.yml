@@ -1,0 +1,13 @@
+name: lff-cr
+version: 0.1.0
+
+authors:
+  - Maikel Chandika <maikel.chandika@vidio.com>
+
+targets:
+  lff-cr:
+    main: src/lff-cr.cr
+
+crystal: 0.34.0
+
+license: MIT
