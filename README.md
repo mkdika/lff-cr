@@ -1,18 +1,9 @@
 # lff-cr
 
-TODO: Write a description here
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
+[![Build Status](https://travis-ci.org/mkdika/lff-cr.svg?branch=master)](https://travis-ci.org/mkdika/lff-cr)
 
-## Installation
-
-TODO: Write installation instructions here
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
+Simple and straightforward large files finder utility for *nix, optimize for human, written in [Crystal](https://crystal-lang.org/) language.
 
 ## Contributing
 
@@ -24,4 +15,8 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Maikel Chandika](https://github.com/your-github-user) - creator and maintainer
+- [Maikel Chandika](https://github.com/mkdika) - creator and maintainer
+
+## Copyright and License
+
+Copyright 2020 Maikel Chandika (mkdika@gmail.com). Code released under the MIT License. See [LICENSE](/LICENSE) file.
