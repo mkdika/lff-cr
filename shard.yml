@@ -1,13 +1,19 @@
-name: lff-cr
+name: lff
 version: 0.1.0
 
 authors:
   - Maikel Chandika <mkdika@gmail.com>
 
-targets:
-  lff-cr:
-    main: src/lff-cr.cr
+description: |
+  Simple and straightforward large files finder utility for *nix, optimize for human.
 
 crystal: 0.34.0
+
+targets:
+  lff:
+    main: src/lff.cr
+
+executables:
+  - lff
 
 license: MIT
