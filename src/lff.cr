@@ -2,7 +2,7 @@ require "option_parser"
 require "./util/*"
 
 module Lff
-  VERSION = "0.1.0"
+  VERSION     = "0.1.0"
   DESCRIPTION = "Simple and straightforward large files finder utility for *nix, optimize for human."
 
   directory_root = ""

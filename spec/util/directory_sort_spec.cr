@@ -5,7 +5,7 @@ describe "directory_util_sort" do
     it "should sort and return tuple as file_limit" do
       map = {"abc" => 3.to_i64, "bcd" => 1.to_i64, "xyz" => 9.to_i64}
       file_limit = 2
-      expected_arr = [{"xyz",9}, {"abc", 3}]
+      expected_arr = [{"xyz", 9}, {"abc", 3}]
 
       result = sort(map, file_limit)
 

@@ -37,7 +37,7 @@ end
 def sort(map : Hash(String, Int64), file_limit : Int32)
   return [] of Array({String, Int64}) if map.empty? || file_limit < 1
   arr = map.to_a.sort_by { |key, value| value }.reverse
-  arr[0..(file_limit-1)]
+  arr[0..(file_limit - 1)]
 end
 
 def print_result(arr : Array(Tuple(String, Int64)), computer_mode : Bool)
