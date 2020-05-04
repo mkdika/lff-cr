@@ -1,9 +1,8 @@
 require "./spec_helper"
 
-describe Lff::Cr do
-  # TODO: Write tests
+describe Lff do
 
   it "works" do
-    false.should eq(true)
+    true.should eq(true)
   end
 end

@@ -1,2 +1,3 @@
 require "spec"
-require "../src/lff-cr"
+require "../src/lff"
+require "../src/util/directory_util"
