@@ -1,7 +1,9 @@
 # lff-cr
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
+[![Built with Crystal](https://img.shields.io/badge/built%20with-crystal-000000.svg?style=flat-square)](https://crystal-lang.org/)
 [![Build Status](https://travis-ci.org/mkdika/lff-cr.svg?branch=master)](https://travis-ci.org/mkdika/lff-cr)
+[![Latest release](https://img.shields.io/github/release/mkdika/lff-cr.svg)](https://github.com/mkdika/lff-cr/releases)
 
 Simple and straightforward large files finder utility for *nix, optimize for human, written in [Crystal](https://crystal-lang.org/) language.
 
