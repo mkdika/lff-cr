@@ -16,7 +16,7 @@ find /your/directory -xdev -type f -exec du -sh {} ';' | sort -rh | head -n10
 # will printout the top 10 largest files size within given directory
 ```
 
-But I'm to lazy to memorize them all :sweat_smile: so I need the simplest solution instead!
+But I'm to lazy to memorize them all :sweat_smile: so I need a simpler solution instead!
 
 ```bash
 # my way
@@ -43,11 +43,14 @@ It is faster!
 
 ## Installation
 
-### Linux
-
-_Coming soon.._
-
 ### MacOS
+
+```bash
+brew tap mkdika/tap
+brew install lff
+```
+
+### Linux
 
 _Coming soon.._
 
