@@ -39,6 +39,28 @@ head -n10  0.00s user 0.00s system 0% cpu 24.141 total
 
 It is faster!
 
+## Installation
+
+### Linux
+
+_Coming soon.._
+
+### MacOS
+
+_Coming soon.._
+
+## Build from source
+
+Install [Crystal](https://crystal-lang.org/install/) language and its pre requirement.
+
+```bash
+git clone https://github.com/mkdika/lff-cr.git
+cd lff-cr/
+shards build --production --release
+```
+
+The built binary will be available as `./bin/lff`
+
 ## Contributing
 
 1. Fork it (<https://github.com/mkdika/lff-cr/fork>)
