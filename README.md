@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/mkdika/lff-cr.svg?branch=master)](https://travis-ci.org/mkdika/lff-cr)
 [![Latest release](https://img.shields.io/github/release/mkdika/lff-cr.svg)](https://github.com/mkdika/lff-cr/releases)
 
-Simple and straightforward large files finder utility for *nix, optimize for human, written in [Crystal](https://crystal-lang.org/) language.
+Simple and straightforward large files finder utility for *nix, optimize for human.
 
 ## Why?
 
