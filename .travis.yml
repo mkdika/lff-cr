@@ -25,6 +25,7 @@ deploy:
   on:
     repo: mkdika/lff-cr
     tags: true
+    condition: "$TRAVIS_TAG =~ -release$"
   skip_cleanup: 'true'
 
 notifications:
