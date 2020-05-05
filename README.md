@@ -9,14 +9,14 @@ Simple and straightforward large files finder utility for *nix, optimize for hum
 
 ## Why?
 
-There are workarounds to do it on *nix, using combination of `find`, `du`, `sort`, `head` eg:
+There are workarounds about how to do it on *nix, for instance is using combination of `find`, `du`, `sort`, `head`.
 
 ```bash
 find /your/directory -xdev -type f -exec du -sh {} ';' | sort -rh | head -n10
 # will printout the top 10 largest files size within given directory
 ```
 
-But I'm to lazy to memorize them all :sweat_smile: so I need a simpler solution instead!
+But I'm to lazy to memorize them all :sweat_smile: I need a simpler solution instead!
 
 ```bash
 # my way
@@ -41,6 +41,8 @@ head -n10  0.00s user 0.00s system 0% cpu 24.141 total
 
 It is faster!
 
+_NOTE: Benchmarking is run on MBP2018 13" OSX 10.15.4._
+
 ## Installation
 
 ### MacOS
@@ -56,7 +58,7 @@ _Coming soon.._
 
 ## Build from source
 
-Install [Crystal](https://crystal-lang.org/install/) language and its pre requirement.
+Install [Crystal](https://crystal-lang.org/install/) language.
 
 ```bash
 git clone https://github.com/mkdika/lff-cr.git
@@ -65,6 +67,14 @@ shards build --production --release
 ```
 
 The built binary will be available as `./bin/lff`
+
+## Usage
+
+```bash
+# lff <directory-path>
+lff ~/Downloads
+# or simple `lff` only to run at current directory.
+```
 
 ## Contributing
 
