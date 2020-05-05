@@ -1,3 +1,5 @@
+dist: xenial
+
 language: crystal
 
 crystal:
@@ -7,3 +9,27 @@ cache: shards
 
 script:
   - crystal spec
+  - shards build --production --release
+
+before_deploy:
+  - cd bin
+  - GZIP=-9 tar cvzf lff.tar.gz lff
+  - cp lff.tar.gz ../.
+
+deploy:
+  provider: releases
+  api_key:
+    secure: RLjJk7CGzPZ+TQk9/UUifROJeJtsDiTgjMUDhwNU5cJO1Lj9Gh5rniiXYREIh7rbQ8mtkfiO11GnsUTedKPPBq6CE6PZB//XCP+MQlVhke5ciP55Mjz3+/tC0aAxrYnzhIdFIk1GuLOkuR2yG/ouNa0VrvMj94TcmxBB3ViXpuE0VEAjzDL1UVJDU8lwz6rNHfnFEBTbjrk78r1QbYC1xwf2Y7AveARQqHV3C3pURQOC66qyicKjJUKN5dmvM2sDfvx/mfFTg69Nlfr7fyNDT+wPeQZO03hD7jdmH4Bfki2eSseW4ZGzGiGM7+gjEBZNWIzwqVf694r4urCO7YpRGmqsjff3s47DF/EDEuA72CjsFEPLNMthd/4hggPQR+k08phJL7BG5kZ8UpksBhtrGTbVKJnTm7nL0mZhb+BTWyi2/vyj4fSMlRheV7SiIAFP7CSKX41OBLqG0BFHlz+mpPN/uk1RQYMUJEP2I/GZG8Haq6Sp3Jbgkrznv7/K8mpbNR266me8O2j/zMzXXSt1Ht/YQlkBl1qzvhnZdeFJmd1Z9WIXNpDpb4ftwbwxBkaSBrd5SJ8f91kAdGSD5YbuYSySqmc011He/BdIni1XClFRuzokSxy9lc/40OKmFHfY+nIQLdBZ7CZgo9dr8mblBzhUDF5n8+/9kTH5lWzLFsk=
+  file:
+    - 'lff.tar.gz'
+  on:
+    repo: mkdika/lff-cr
+    tags: true
+  skip_cleanup: 'true'
+
+notifications:
+  email:
+    recipients:
+      - mkdika@gmail.com
+    on_success: always
+    on_failure: always
