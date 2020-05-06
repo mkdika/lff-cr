@@ -48,7 +48,7 @@ _NOTE: Benchmarking is run on MBP2018 13" OSX 10.15.4._
 ### MacOS
 
 ```bash
-brew tap mkdika/tap
+brew tap mkdika/brew
 brew install lff
 ```
 
