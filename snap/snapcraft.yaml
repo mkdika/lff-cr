@@ -9,7 +9,7 @@ confinement: strict
 base: core18
 
 apps:
-  oq:
+  lff:
     command: bin/lff
 
 parts:
