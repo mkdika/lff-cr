@@ -4,6 +4,7 @@
 [![Built with Crystal](https://img.shields.io/badge/built%20with-crystal-000000.svg?style=flat-square)](https://crystal-lang.org/)
 [![Build Status](https://travis-ci.org/mkdika/lff-cr.svg?branch=master)](https://travis-ci.org/mkdika/lff-cr)
 [![Latest release](https://img.shields.io/github/release/mkdika/lff-cr.svg)](https://github.com/mkdika/lff-cr/releases)
+[![lff](https://snapcraft.io//lff/badge.svg)](https://snapcraft.io/lff)
 
 Simple and straightforward large files finder utility for *nix, optimize for human.
 
@@ -52,9 +53,13 @@ brew tap mkdika/brew
 brew install lff
 ```
 
-### Linux
+### Linux via [snap](https://snapcraft.io/)
 
-_Coming soon.._
+For more on installing & using `snap` with your Linux distribution, see the [official documentation](https://docs.snapcraft.io/installing-snapd).
+
+```bash
+snap install lff
+```
 
 ## Build from source
 
