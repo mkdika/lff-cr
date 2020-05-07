@@ -42,7 +42,7 @@ module Lff
     sort_result = sort(scanned_result, file_limit.to_i)
     print_result(sort_result.as(Array(Tuple(String, Int64))), computer_mode)
   rescue exception
-    STDERR.puts "\e[31mError:\e[0m Can not parser number or out of range."
+    STDERR.puts "\e[31mError:\e[0m #{exception.message}"
     exit(1)
   end
 end

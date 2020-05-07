@@ -36,8 +36,12 @@ end
 
 def sort(map : Hash(String, Int64), file_limit : Int32)
   return [] of Array({String, Int64}) if map.empty? || file_limit < 1
-  arr = map.to_a.sort_by { |key, value| value }.reverse
-  arr[0..(file_limit - 1)]
+  begin
+    arr = map.to_a.sort_by { |key, value| value }.reverse
+    arr[0..(file_limit - 1)]
+  rescue ex
+    raise Exception.new(ex.message)
+  end
 end
 
 def print_result(arr : Array(Tuple(String, Int64)), computer_mode : Bool)
@@ -45,15 +49,19 @@ def print_result(arr : Array(Tuple(String, Int64)), computer_mode : Bool)
   return result if arr.empty?
   rsize = arr[0][1].to_s.size
   arr.each do |path, size|
-    line = String.build do |io|
-      if computer_mode
-        io << size.to_s.rjust(rsize, ' ') << " " << path
-      else
-        io << "\e[32m" << size.humanize(precision: 1, significant: false).rjust(6, ' ') << "\e[0m " << path
+    begin
+      line = String.build do |io|
+        if computer_mode
+          io << size.to_s.rjust(rsize, ' ') << " " << path
+        else
+          io << "\e[32m" << size.humanize(precision: 1, significant: false).rjust(6, ' ') << "\e[0m " << path
+        end
       end
+      puts line
+      result << line.to_s
+    rescue ex
+      raise Exception.new(ex.message)
     end
-    puts line
-    result << line.to_s
   end
   result
 end
