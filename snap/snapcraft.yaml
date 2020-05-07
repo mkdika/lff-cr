@@ -1,6 +1,6 @@
 name: lff
 type: app
-version: '0.1.0'
+version: '0.1.1'
 summary: Simple and straightforward large files finder utility for *nix
 description: |
   Simple and straightforward large files finder utility for *nix, optimize for human.
