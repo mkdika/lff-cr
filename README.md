@@ -95,4 +95,4 @@ lff ~/Downloads
 
 ## Copyright and License
 
-Copyright 2020 Maikel Chandika (mkdika@gmail.com). Code released under the MIT License. See [LICENSE](/LICENSE) file.
+Copyright 2020 - 2021 Maikel Chandika (mkdika@gmail.com). Code released under the MIT License. See [LICENSE](/LICENSE) file.
