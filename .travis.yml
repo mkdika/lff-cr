@@ -8,8 +8,12 @@ crystal:
 cache: shards
 
 script:
-  - crystal spec
+  - crystal spec --verbose
   - shards build --production --release
+
+branches:
+  only:
+    - master
 
 before_deploy:
   - cd bin
